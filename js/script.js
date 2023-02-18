@@ -74,5 +74,18 @@ document.getElementById("ellipse-btn").addEventListener("click", function () {
                 Convert to m²</button></p>`;
   }
 });
+  // Get all the cards on the page
+  const cards = document.querySelectorAll(".cards-hover-bg");
+  cards.forEach(card => {
+    card.addEventListener("mouseenter", () => {
+      // Generate a random color
+      const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+      card.style.backgroundColor = "#" + randomColor;
+      
+    });
+    card.addEventListener("mouseleave", () => {
+      card.style.backgroundColor = "#fff";
+    });
+  });
 
 
