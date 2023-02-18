@@ -15,13 +15,13 @@ function getInputField2ValueByID (inputField){
 function calculateArea(val1, val2, shape) {
   // Check if the input values are valid numbers
   if (isNaN(val1) || isNaN(val2)) {
-    alert('Please enter valid numbers for the base and height.');
+    alert('Please enter valid numbers');
     return;
   }
 
   // Check if the input values are non-negative
   if (val1 < 0 || val2 < 0) {
-    alert('Please enter non-negative values for the base and height.');
+    alert('Please enter non-negative values');
     return;
   }
 
@@ -31,8 +31,10 @@ function calculateArea(val1, val2, shape) {
     area = 0.5 * val1 * val2;
   } else if (shape === 'pentagon') {
     area = 0.5 * val1 * val2;
-  } else if (shape=== 'rhombus-btn'){
+  } else if (shape=== 'rhombus'){
     area= 0.5 * val1* val2;
+  }else if(shape === 'rectangle'){
+    area = val1* val2;
   }
   
   return area;
