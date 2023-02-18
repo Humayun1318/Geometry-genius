@@ -1,3 +1,17 @@
+function getInputField1ValueByID (inputField){
+  const inputField1=document.getElementById(inputField);
+  const inputField1ValueString=inputField1.value;
+  const inputField1Value=parseFloat(inputField1ValueString);
+  inputField1.value='';
+  return inputField1Value;
+}
+function getInputField2ValueByID (inputField){
+  const inputField2=document.getElementById(inputField);
+  const inputField2ValueString=inputField2.value;
+  const inputField2Value=parseFloat(inputField2ValueString);
+  inputField2.value='';
+  return inputField2Value;
+}
 function calculateArea(val1, val2, shape) {
   // Check if the input values are valid numbers
   if (isNaN(val1) || isNaN(val2)) {
