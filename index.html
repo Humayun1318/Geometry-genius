@@ -27,17 +27,20 @@
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between"
       >
         <h1 class="cursor-pointer">
-          <span class="font-bold text-4xl" style="color: rgba(17, 17, 17, 0.8)"
+          <span
+            class="font-bold md:text-4xl"
+            style="color: rgba(17, 17, 17, 0.8)"
             >Interactive</span
           >
           <br />
           <span
-            class="font-medium text-3xl"
+            class="font-medium md:text-3xl"
             style="color: rgba(17, 17, 17, 0.6)"
             >Geometry Genius</span
           >
         </h1>
         <button
+          id="blog-btn"
           class="bg-[#1090D8] text-white font-bold py-2 px-4 rounded w-32"
         >
           Blog
@@ -50,7 +53,9 @@
         <div
           class="w-[80%] mx-auto mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
-          <div class="max-w-md shadow-lg rounded-lg text-center py-12 cards-hover-bg">
+          <div
+            class="max-w-md shadow-lg rounded-lg text-center py-12 cards-hover-bg"
+          >
             <figure>
               <img
                 class="w-60 mb-10 mx-auto"
@@ -84,13 +89,16 @@
             <div class="">
               <button
                 id="triangle-btn"
-                class="w-4/5 bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                class="w-4/5 bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2  
+                 px-4 rounded"
               >
                 Calculate
               </button>
             </div>
           </div>
-          <div class="max-w-md shadow-lg rounded-lg text-center py-12 cards-hover-bg">
+          <div
+            class="max-w-md shadow-lg rounded-lg text-center py-12 cards-hover-bg"
+          >
             <figure>
               <img
                 class="w-60 mb-10 mx-auto"
@@ -103,13 +111,15 @@
               <h2 class="card-title font-bold text-xl mb-2.5">Rectangle</h2>
               <p class="font-normal text-base mb-5">Area (A) = w &times; l</p>
               <div class="flex mt-4 justify-center mb-8">
-                <input id="w-input-rectangle"
+                <input
+                  id="w-input-rectangle"
                   class="w-full px-3 py-2 rounded-md bg bg-[#F1F1F1]"
                   type="number"
                   placeholder="w"
                 />
                 <p class="flex justify-center items-center ml-2 mr-1">cm</p>
-                <input id="l-input-rectangle"
+                <input
+                  id="l-input-rectangle"
                   class="w-full ml-2 px-3 py-2 rounded-md bg-[#F1F1F1]"
                   type="number"
                   placeholder="l"
@@ -118,14 +128,18 @@
               </div>
             </div>
             <div class="">
-              <button id="rectangle-btn"
-                class="w-4/5 bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              <button
+                id="rectangle-btn"
+                class="w-4/5 bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2  
+                 px-4 rounded"
               >
                 Calculate
               </button>
             </div>
           </div>
-          <div class="max-w-md shadow-lg rounded-lg text-center py-12 cards-hover-bg">
+          <div
+            class="max-w-md shadow-lg rounded-lg text-center py-12 cards-hover-bg"
+          >
             <figure>
               <img
                 class="w-60 mb-10 mx-auto"
@@ -138,13 +152,15 @@
               <h2 class="card-title font-bold text-xl mb-2.5">Parallelogram</h2>
               <p class="font-normal text-base mb-5">Area (A) = b &times; h</p>
               <div class="flex mt-4 justify-center mb-8">
-                <input id="b-input-parallelogram"
+                <input
+                  id="b-input-parallelogram"
                   class="w-full px-3 py-2 rounded-md bg bg-[#F1F1F1]"
                   type="number"
                   placeholder="b"
                 />
                 <p class="flex justify-center items-center ml-2 mr-1">cm</p>
-                <input id="h-input-parallelogram"
+                <input
+                  id="h-input-parallelogram"
                   class="w-full ml-2 px-3 py-2 rounded-md bg-[#F1F1F1]"
                   type="number"
                   placeholder="h"
@@ -153,14 +169,18 @@
               </div>
             </div>
             <div class="">
-              <button id="parallelogram-btn"
-                class="w-4/5 bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              <button
+                id="parallelogram-btn"
+                class="w-4/5 bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2  
+                 px-4 rounded"
               >
                 Calculate
               </button>
             </div>
           </div>
-          <div class="max-w-md shadow-lg rounded-lg text-center py-12 cards-hover-bg">
+          <div
+            class="max-w-md shadow-lg rounded-lg text-center py-12 cards-hover-bg"
+          >
             <figure>
               <img
                 class="w-60 mb-10 mx-auto"
@@ -178,13 +198,15 @@
                 &times; d<span style="vertical-align: sub">2</span>
               </p>
               <div class="flex mt-4 justify-center mb-8">
-                <input id="d1-input-rhombus"
-                  class="w-full px-3 py-2 rounded-md bg bg-[#F1F1F1] "
+                <input
+                  id="d1-input-rhombus"
+                  class="w-full px-3 py-2 rounded-md bg bg-[#F1F1F1]"
                   type="number"
                   placeholder="d1"
                 />
                 <p class="flex justify-center items-center ml-2 mr-1">cm</p>
-                <input id="d2-input-rhombus"
+                <input
+                  id="d2-input-rhombus"
                   class="w-full ml-2 px-3 py-2 rounded-md bg-[#F1F1F1]"
                   type="number"
                   placeholder="d2"
@@ -195,13 +217,16 @@
             <div class="">
               <button
                 id="rhombus-btn"
-                class="w-4/5 bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                class="w-4/5 bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2  
+                 px-4 rounded"
               >
                 Calculate
               </button>
             </div>
           </div>
-          <div class="max-w-md shadow-lg rounded-lg text-center py-12 cards-hover-bg">
+          <div
+            class="max-w-md shadow-lg rounded-lg text-center py-12 cards-hover-bg"
+          >
             <figure>
               <img
                 class="w-60 mb-10 mx-auto"
@@ -216,13 +241,15 @@
                 Area (A) = 0.5 &times; p &times; b
               </p>
               <div class="flex mt-4 justify-center mb-8">
-                <input id="p-input-pentagon"
-                  class="w-full px-3 py-2 rounded-md bg bg-[#F1F1F1] "
+                <input
+                  id="p-input-pentagon"
+                  class="w-full px-3 py-2 rounded-md bg bg-[#F1F1F1]"
                   type="number"
                   placeholder="p"
                 />
                 <p class="flex justify-center items-center ml-2 mr-1">cm</p>
-                <input id="b-input-pentagon"
+                <input
+                  id="b-input-pentagon"
                   class="w-full ml-2 px-3 py-2 rounded-md bg-[#F1F1F1]"
                   type="number"
                   placeholder="b"
@@ -233,13 +260,16 @@
             <div class="">
               <button
                 id="pentagon-btn"
-                class="w-4/5 bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                class="w-4/5 bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2  
+                 px-4 rounded"
               >
                 Calculate
               </button>
             </div>
           </div>
-          <div class="max-w-md shadow-lg rounded-lg text-center py-12 cards-hover-bg">
+          <div
+            class="max-w-md shadow-lg rounded-lg text-center py-12 cards-hover-bg"
+          >
             <figure>
               <img
                 class="w-60 mb-10 mx-auto"
@@ -252,13 +282,15 @@
               <h2 class="card-title font-bold text-xl mb-2.5">Ellipse</h2>
               <p class="font-normal text-base mb-5">Area (A) = &pi;ab</p>
               <div class="flex mt-4 justify-center mb-8">
-                <input id="a-input-ellipse"
+                <input
+                  id="a-input-ellipse"
                   class="w-full px-3 py-2 rounded-md bg bg-[#F1F1F1]"
                   type="number"
                   placeholder="a"
                 />
                 <p class="flex justify-center items-center ml-2 mr-1">cm</p>
-                <input id="b-input-ellipse"
+                <input
+                  id="b-input-ellipse"
                   class="w-full ml-2 px-3 py-2 rounded-md bg-[#F1F1F1]"
                   type="number"
                   placeholder="b"
@@ -267,8 +299,10 @@
               </div>
             </div>
             <div class="">
-              <button id="ellipse-btn"
-                class="w-4/5 bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              <button
+                id="ellipse-btn"
+                class="w-4/5 bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2  
+                 px-4 rounded"
               >
                 Calculate
               </button>
@@ -276,7 +310,7 @@
           </div>
         </div>
 
-        <div class="md:w-[25%] w-full mx-auto mt-5">
+        <div class="md:w-[25%] w-full mx-auto mt-5 px-4">
           <div
             class="max-w-sm mx-auto shadow-lg rounded-lg py-6"
             style="border: 1px solid rgba(17, 17, 17, 0.1); height: 454.2px"
@@ -287,9 +321,7 @@
             >
               Area Calculation
             </h4>
-            <div id="result" class="mt-4">
-
-            </div>
+            <div id="result" class="mt-4"></div>
           </div>
         </div>
       </section>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter&family=Manrope&family=Open+Sans&family=Poppins:wght@500&family=Work+Sans:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Blogs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="py-12 md:px-12 bg-blue-100">
+    <header
+      class="rounded-md w-full mx-auto py-6 px-4 mb-8"
+      style="background: rgba(16, 144, 216, 0.1)"
+    >
+      <h2 class="text-center font-extrabold text-2xl">This is the Blog page</h2>
+    </header>
+    <main class="grid md:grid-cols-2 gap-6">
+      <section class="bg-slate-300 rounded-md px-2 mx-2">
+        <div class="md:px-12 py-12">
+          <h5 class="mb-4 font-bold text-xl">
+            1.What is DOM and what is the purpose of DOM?
+          </h5>
+          <p class="text-base font-normal">
+            DOM means Document Object Model. Which is basically used on the Web
+            for documents. Like HTML content used as a tree structure, every
+            node of the tree represents a part of a document such as an element,
+            attributes, or text. <br><br> The main purpose of the DOM is that it gives us
+            a dynamic user interface which contains a lot of activities from the
+            user on the Web without requiring a full page reload. It gives us
+            flexibility for programs to dynamically access and manipulate the
+            content, structure, and style of a web page. Also we see that the
+            developers create an interactive web page where they can respond to
+            user input and change their appearances.
+          </p>
+        </div>
+        <div class="md:px-12 pb-12">
+          <h5 class="mb-4 font-bold text-xl">
+            2.How will you select HTML elements using DOM? Name the DOM methods
+          </h5>
+          <p class="text-base font-normal">
+            We can use several ways to select the HTML elements using DOM. Here’s the  few most common 
+             methods to select the HTML elements.
+            <ul class="list-disc mt-2">
+                <li>getElementById(): This method is used for the ID. We can select any html elements by 
+                     using a unique ID.</li>
+                <li>getElementsByClassName(): This method is used for class names. When we use this 
+                 method by using a class name it gives us a return array-like object of all elements</li>
+                <li>getElementsByTagName(): This method is used for html tag names. We can select from 
+                     the HTML document by using their tag names. And it also gives us the full content of 
+                      that tag like-array object.</li>
+                <li>querySelector(): This method is used for CSS selector. We select any elements like a 
+                     CSS selector.</li>
+                <li>querySelectorAll(): This is also used for CSS selectors but it gives us a nodelist 
+                     containing all elements of this selector. </li>
+            </ul>
+            
+          </p>
+        </div>
+      </section>
+      <section class="bg-sky-200 pt-12 rounded-md px-2 mx-2">
+        <div class="md:px-12 pb-12">
+          <h5 class="mb-4 font-bold text-xl">3.What is an event bubble?</h5>
+          <p class="text-base font-normal">
+            Event Bubble is a concept that occurs in a particular element in the
+            Document Object Model (DOM) and at the same time it triggers on all
+            of the parent elements in a sequential order. <br><br> This is the “bubbling
+            up” through the DOM tree. When a Button trigger The event handler on
+            an element is first performed by the browser when an event is
+            triggered on that element, and the event is then propagated to the
+            parent element. This procedure keeps on until the event reaches the
+            document , which is the topmost element in the DOM tree.
+          </p>
+        </div>
+        <div class="md:px-12 pb-12">
+          <h5 class="mb-4 font-bold text-xl">
+            4.What is a callback function and why will you use it?
+          </h5>
+          <p class="text-base font-normal">
+            Callback function is a type of function that uses a function as a
+            parameter to another function.It is subsequently called inside the
+            inner function to carry out a certain task. <br><br> I would use the Callback
+            function to adjust a function's behaviour without directly changing
+            its source code. And also a callback function can be used to handle
+            the response once it becomes available and using this callback
+            function we can create more dynamic and adaptable programs that can
+            handle a wide range of use cases.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
