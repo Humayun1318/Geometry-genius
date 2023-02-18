@@ -13,7 +13,8 @@ document.getElementById("triangle-btn").addEventListener("click", function () {
     clickCount++;
     resultCalculationDiv.innerHTML += `<p class="ml-4 mb-4">${clickCount}. Triangle ${area.toFixed(
       2
-    )} cm² <button
+    )}cm² 
+              <button
                 class="bg-blue-500 hover:bg-blue-700 text-white font-normal py-1 px-2 rounded ">
                 Convert to m²</button></p>`;
   }
