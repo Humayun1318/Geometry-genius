@@ -46,7 +46,7 @@
     </header>
 
     <main>
-      <section class="lg:px-12 flex flex-col md:flex-row gap-6">
+      <section class="lg:px-12 flex flex-col md:flex-row gap-6 md:px-8">
         <div
           class="w-[80%] mx-auto mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
@@ -252,13 +252,13 @@
               <h2 class="card-title font-bold text-xl mb-2.5">Ellipse</h2>
               <p class="font-normal text-base mb-5">Area (A) = &pi;ab</p>
               <div class="flex mt-4 justify-center mb-8">
-                <input
+                <input id="a-input-ellipse"
                   class="w-full px-3 py-2 rounded-md bg bg-[#F1F1F1]"
                   type="number"
                   placeholder="a"
                 />
                 <p class="flex justify-center items-center ml-2 mr-1">cm</p>
-                <input
+                <input id="b-input-ellipse"
                   class="w-full ml-2 px-3 py-2 rounded-md bg-[#F1F1F1]"
                   type="number"
                   placeholder="b"
@@ -267,7 +267,7 @@
               </div>
             </div>
             <div class="">
-              <button
+              <button id="ellipse-btn"
                 class="w-4/5 bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               >
                 Calculate

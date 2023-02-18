@@ -35,7 +35,10 @@ function calculateArea(val1, val2, shape) {
     area= 0.5 * val1* val2;
   }else if(shape === 'rectangle'){
     area = val1* val2;
+  }else if (shape === "parallelogram") {
+    area = val1 * val2;
+  }else if (shape === "ellipse"){
+    area = 3.14*val1*val2;
   }
-  
   return area;
 }
