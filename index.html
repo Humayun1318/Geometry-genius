@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/0c05f102e0.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0c05f102e0.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -49,11 +52,9 @@
       </div>
     </header>
 
-    <main>
+    <main class="mb-8">
       <section class="lg:px-12 flex flex-col md:flex-row gap-4 md:px-8 px-2">
-        <div
-          class="w-[80%] mx-auto  grid md:grid-cols-2 lg:grid-cols-3 gap-4"
-        >
+        <div class="w-[80%] mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div
             class="max-w-lg shadow-lg rounded-lg text-center p-6 cards-hover-bg"
           >
@@ -71,32 +72,38 @@
                 Area (A) = 0.5 &times; b &times; h
               </p>
               <p class="font-normal text-base mb-2">
-                b= <span id="take-from-base-input-triangle">00 </span>cm h= <span id="take-from-heifgt-input-triangle">00 </span>cm  
-                <button id="btn-for-visualize-input-triangle" class="ml-2"><i class="fa-regular fa-pen-to-square"></i></button>
+                b= <span id="take-from-base-input-triangle">00 </span>cm h=
+                <span id="take-from-height-input-triangle">00 </span>cm
+                <button id="btn-for-visualize-input-triangle" class="ml-2">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                </button>
               </p>
               <div class="flex mt-2 justify-center mb-8">
                 <input
                   id="base-input"
-                  class="w-full px-3 py-2 rounded-md  bg-[#F1F1F1]"
+                  class="w-full px-3 py-2 rounded-md bg-[#F1F1F1]"
                   type="number"
                   placeholder="b"
                 />
                 <p class="flex justify-center items-center ml-2 mr-1">cm</p>
                 <input
                   id="height-input"
-                  class="w-full  px-3 py-2 rounded-md bg-[#F1F1F1]"
+                  class="w-full px-3 py-2 rounded-md bg-[#F1F1F1]"
                   type="number"
                   placeholder="h"
                 />
                 <p class="flex justify-center items-center ml-2">cm</p>
-                <input id="checkbox-for-tack-value-triangle" class="ml-2 w-8" type="checkbox">
+                <input
+                  id="checkbox-for-tack-value-triangle"
+                  class="ml-2 w-8"
+                  type="checkbox"
+                />
               </div>
             </div>
             <div class="">
               <button
                 id="triangle-btn"
-                class="w-full bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2  
-                 px-4 rounded"
+                class="w-full bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               >
                 Calculate
               </button>
@@ -117,8 +124,11 @@
               <h2 class="card-title font-bold text-xl mb-2.5">Rectangle</h2>
               <p class="font-normal text-base mb-2">Area (A) = w &times; l</p>
               <p class="font-normal text-base mb-2">
-                w= <span id="take-from-width-input-rectangle">00 </span>cm l= <span id="take-from-length-input-rectangle">00 </span>cm  
-                <button id="btn-for-visualize-input-rectangle" class="ml-2"><i class="fa-regular fa-pen-to-square"></i></button>
+                w= <span id="take-from-width-input-rectangle">00 </span>cm l=
+                <span id="take-from-length-input-rectangle">00 </span>cm
+                <button id="btn-for-visualize-input-rectangle" class="ml-2">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                </button>
               </p>
               <div class="flex mt-2 justify-center mb-8">
                 <input
@@ -135,14 +145,17 @@
                   placeholder="l"
                 />
                 <p class="flex justify-center items-center ml-2">cm</p>
-                <input id="checkbox-for-tack-value-rectangle" class="ml-2 w-8" type="checkbox">
+                <input
+                  id="checkbox-for-tack-value-rectangle"
+                  class="ml-2 w-8"
+                  type="checkbox"
+                />
               </div>
             </div>
             <div class="">
               <button
                 id="rectangle-btn"
-                class="w-full bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2  
-                 px-4 rounded"
+                class="w-full bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               >
                 Calculate
               </button>
@@ -163,10 +176,16 @@
               <h2 class="card-title font-bold text-xl mb-2.5">Parallelogram</h2>
               <p class="font-normal text-base mb-2">Area (A) = b &times; h</p>
               <p class="font-normal text-base mb-2">
-                b= <span id="take-from-base-input-para">00 </span>cm h= <span id="take-from-heifgt-input-para">00 </span>cm  
-                <button id="btn-for-visualize-input-para" class="ml-2"><i class="fa-regular fa-pen-to-square"></i></button>
+                b= <span id="take-from-base-input-para">00 </span>cm h=
+                <span id="take-from-heifgt-input-para">00 </span>cm
+                <button id="btn-for-visualize-input-para" class="ml-2">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                </button>
               </p>
-              <div class="flex mt-2 justify-center mb-8">
+              <div
+                class="flex mt-2 justify-center mb-8 hidden"
+                id="input-fields-para"
+              >
                 <input
                   id="b-input-parallelogram"
                   class="w-full px-3 py-2 rounded-md bg bg-[#F1F1F1]"
@@ -181,14 +200,17 @@
                   placeholder="h"
                 />
                 <p class="flex justify-center items-center ml-2">cm</p>
-                <input id="checkbox-for-tack-value-para" class="ml-2 w-8" type="checkbox">
+                <input
+                  id="checkbox-for-tack-value-para"
+                  class="ml-2 w-8"
+                  type="checkbox"
+                />
               </div>
             </div>
             <div class="">
               <button
                 id="parallelogram-btn"
-                class="w-full bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2  
-                 px-4 rounded"
+                class="w-full bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               >
                 Calculate
               </button>
@@ -214,10 +236,16 @@
                 &times; d<span style="vertical-align: sub">2</span>
               </p>
               <p class="font-normal text-base mb-2">
-                d1= <span id="take-from-base-input-rhombus">00 </span>cm d2= <span id="take-from-heifgt-input-rhombus">00 </span>cm  
-                <button id="btn-for-visualize-input-rhombus" class="ml-2"><i class="fa-regular fa-pen-to-square"></i></button>
+                d1= <span id="take-from-base-input-rhombus">00 </span>cm d2=
+                <span id="take-from-heifgt-input-rhombus">00 </span>cm
+                <button id="btn-for-visualize-input-rhombus" class="ml-2">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                </button>
               </p>
-              <div class="flex mt-2 justify-center mb-8">
+              <div
+                class="flex mt-2 justify-center mb-8 hidden"
+                id="input-fields-rhombus"
+              >
                 <input
                   id="d1-input-rhombus"
                   class="w-full px-3 py-2 rounded-md bg bg-[#F1F1F1]"
@@ -232,14 +260,17 @@
                   placeholder="d2"
                 />
                 <p class="flex justify-center items-center ml-2">cm</p>
-                <input id="checkbox-for-tack-value-rhombus" class="ml-2 w-8" type="checkbox">
+                <input
+                  id="checkbox-for-tack-value-rhombus"
+                  class="ml-2 w-8"
+                  type="checkbox"
+                />
               </div>
             </div>
             <div class="">
               <button
                 id="rhombus-btn"
-                class="w-full bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2  
-                 px-4 rounded"
+                class="w-full bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               >
                 Calculate
               </button>
@@ -262,32 +293,41 @@
                 Area (A) = 0.5 &times; p &times; b
               </p>
               <p class="font-normal text-base mb-2">
-                p= <span id="take-from-base-input-pentagon">00 </span>cm b= <span id="take-from-heifgt-input-pentagon">00 </span>cm  
-                <button id="btn-for-visualize-input-pentagon" class="ml-2"><i class="fa-regular fa-pen-to-square"></i></button>
+                p= <span id="take-from-base-input-pentagon">00 </span>cm b=
+                <span id="take-from-heifgt-input-pentagon">00 </span>cm
+                <button id="btn-for-visualize-input-pentagon" class="ml-2">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                </button>
               </p>
-              <div class="flex mt-2 justify-center mb-8">
+              <div
+                class="flex mt-2 justify-center mb-8 hidden"
+                id="input-fields-pentagon"
+              >
                 <input
                   id="p-input-pentagon"
-                  class="w-full px-3 py-2 rounded-md  bg-[#F1F1F1]"
+                  class="w-full px-3 py-2 rounded-md bg-[#F1F1F1]"
                   type="number"
                   placeholder="p"
                 />
                 <p class="flex justify-center items-center ml-2 mr-1">cm</p>
                 <input
                   id="b-input-pentagon"
-                  class="w-full  px-3 py-2 rounded-md bg-[#F1F1F1]"
+                  class="w-full px-3 py-2 rounded-md bg-[#F1F1F1]"
                   type="number"
                   placeholder="b"
                 />
                 <p class="flex justify-center items-center ml-2">cm</p>
-                <input id="checkbox-for-tack-value-rhombus" class="ml-2 w-8" type="checkbox">
+                <input
+                  id="checkbox-for-tack-value-rhombus"
+                  class="ml-2 w-8"
+                  type="checkbox"
+                />
               </div>
             </div>
             <div class="">
               <button
                 id="pentagon-btn"
-                class="w-full bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2  
-                 px-4 rounded"
+                class="w-full bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               >
                 Calculate
               </button>
@@ -308,10 +348,16 @@
               <h2 class="card-title font-bold text-xl mb-2.5">Ellipse</h2>
               <p class="font-normal text-base mb-2">Area (A) = &pi;ab</p>
               <p class="font-normal text-base mb-2">
-                a= <span id="take-from-base-input-eelipse">00 </span>cm b= <span id="take-from-heifgt-input-ellipse">00 </span>cm  
-                <button id="btn-for-visualize-input-ellipse" class="ml-2"><i class="fa-regular fa-pen-to-square"></i></button>
+                a= <span id="take-from-base-input-eelipse">00 </span>cm b=
+                <span id="take-from-heifgt-input-ellipse">00 </span>cm
+                <button id="btn-for-visualize-input-ellipse" class="ml-2">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                </button>
               </p>
-              <div class="flex mt-2 justify-center mb-8">
+              <div
+                class="flex mt-2 justify-center mb-8 hidden"
+                id="input-fields-ellipse"
+              >
                 <input
                   id="a-input-ellipse"
                   class="w-full px-3 py-2 rounded-md bg bg-[#F1F1F1]"
@@ -321,19 +367,22 @@
                 <p class="flex justify-center items-center ml-2 mr-1">cm</p>
                 <input
                   id="b-input-ellipse"
-                  class="w-full  px-3 py-2 rounded-md bg-[#F1F1F1]"
+                  class="w-full px-3 py-2 rounded-md bg-[#F1F1F1]"
                   type="number"
                   placeholder="b"
                 />
                 <p class="flex justify-center items-center ml-2">cm</p>
-                <input id="checkbox-for-tack-value-ellipse" class="ml-2 w-8" type="checkbox">
+                <input
+                  id="checkbox-for-tack-value-ellipse"
+                  class="ml-2 w-8"
+                  type="checkbox"
+                />
               </div>
             </div>
             <div class="">
               <button
                 id="ellipse-btn"
-                class="w-full bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2  
-                 px-4 rounded"
+                class="w-full bg-black mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               >
                 Calculate
               </button>
