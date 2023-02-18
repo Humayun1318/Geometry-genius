@@ -33,30 +33,10 @@ visualizeBtnEllipse.addEventListener("click", () => {
 
 
 
-// checked and set the input values
-// const baseValueDisplay = document.getElementById("take-from-base-input-triangle");
-// const heightValueDisplay = document.getElementById("take-from-height-input-triangle");
+// checked and set the input values           
 const checkbox = document.getElementById("checkbox-for-tack-value-triangle");
-
-// checkbox.addEventListener("click", () => {
-    
-//   if (checkbox.checked) {
-//     const baseInput = getInputField1ValueByID("base-input");
-//     const heightInput = getInputField2ValueByID("height-input");
-//     baseValueDisplay.innerText =baseInput ;
-//     heightValueDisplay.innerText = heightInput ;
-//   } else{
-//     baseValueDisplay.innerText = "00";
-//     heightValueDisplay.innerText = "00";
-//   }
-// });
-
-const baseValueDisplay = document.getElementById(
-  "take-from-base-input-triangle"
-);
-const heightValueDisplay = document.getElementById(
-  "take-from-height-input-triangle"
-);
+const baseValueDisplay = document.getElementById("take-from-base-input-triangle");
+const heightValueDisplay = document.getElementById("take-from-height-input-triangle");
 const baseInput = document.getElementById("base-input");
 const heightInput = document.getElementById("height-input");
 let storedBaseValue = null;
@@ -78,6 +58,34 @@ checkbox.addEventListener("click", () => {
       // No stored values, reset to "00"
       baseValueDisplay.innerText = "00";
       heightValueDisplay.innerText = "00";
+    }
+  }
+});
+
+const checkboxRectangle = document.getElementById("checkbox-for-tack-value-rectangle");
+const widthValueDisplayRectangle = document.getElementById("take-from-width-input-rectangle");
+const lengthValueDisplayRectangle = document.getElementById("take-from-length-input-rectangle");
+const widthInputRectangle = document.getElementById("w-input-rectangle");
+const lengthInputRectangle = document.getElementById("l-input-rectangle");
+let storedWidthValueRectangle = null;
+let storedLengthValueRectangle = null;
+
+checkboxRectangle.addEventListener("click", () => {
+  if (checkboxRectangle.checked) {
+    // Checkbox is checked, store the input field values
+    storedWidthValueRectangle = widthInputRectangle.value;
+    storedLengthValueRectangle = lengthInputRectangle.value;
+    widthValueDisplayRectangle.innerText = storedWidthValueRectangle;
+    lengthValueDisplayRectangle.innerText = storedLengthValueRectangle;
+  } else {
+    // Checkbox is unchecked, use the stored values if available
+    if (storedWidthValueRectangle && storedLengthValueRectangle) {
+      widthValueDisplayRectangle.innerText = storedWidthValueRectangle;
+      lengthValueDisplayRectangle.innerText = storedLengthValueRectangle;
+    } else {
+      // No stored values, reset to "00"
+      widthValueDisplayRectangle.innerText = "00";
+      lengthValueDisplayRectangle.innerText = "00";
     }
   }
 });
